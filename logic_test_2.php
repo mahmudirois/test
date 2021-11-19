@@ -1,0 +1,4 @@
+SELECT * FROM `tb_mahasiswa` 
+INNER JOIN tb_mahasiswa_nilai ON tb_mahasiswa.mhs_id = tb_mahasiswa_nilai.mhs_id 
+INNER JOIN tb_matakuliah ON tb_mahasiswa_nilai.mk_id = tb_matakuliah.mk_id 
+WHERE tb_mahasiswa.mhs_nama="Sari" AND tb_matakuliah.mk_kode="mk303"
